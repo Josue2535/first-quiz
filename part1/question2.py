@@ -14,12 +14,13 @@
 # Assign the function to `swapper` so that the function `run_swapper(..)` can use
 # it. As always, there is a test suite that checks the result. It is in 
 # `question2_test.py.`
+
 def swapper(t):
-    # Verifica si la tupla tiene exactamente dos elementos
+    # Checks if the tuple has exactly two elements
     if len(t) == 2:
         return (t[1], t[0])
     else:
-        # Si la tupla no tiene dos elementos, devuelve la tupla original
+        # If the tuple does not have two elements, returns the original tuple
         return t
     
 swapper = swapper
