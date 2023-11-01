@@ -45,7 +45,7 @@ class Oven:
         pass
 
     def get_output(self):
-        # Determina el resultado basado en la lógica de combinación y la temperatura
+        # Determines result based on combination logic and temperature
         if "lead" in self.ingredients and "mercury" in self.ingredients and self.temperature == "boiled":
             return "gold"
         elif "water" in self.ingredients and "air" in self.ingredients and self.temperature == "frozen":
@@ -53,7 +53,7 @@ class Oven:
         elif "cheese" in self.ingredients and "dough" in self.ingredients and "tomato" in self.ingredients and self.temperature == "boiled":
             return "pizza"
         else:
-            # Agrega lógica adicional si es necesario para otros casos
+            # Add additional logic if needed for other cases
             return "unknown"
 
 
